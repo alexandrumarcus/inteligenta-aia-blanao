@@ -1,36 +1,4 @@
 $(document).ready(function () {
-	//
-	class Item {
-		constructor(price, size) {
-			this.price = price;
-			this.size = size;
-		}
-
-		getSize() {
-			return this.size;
-		}
-		getPrice() {
-			return this.price;
-		}
-	}
-	class Vector {
-		constructor() {
-			this.array = [];
-		}
-
-		addItem(obj) {
-			this.array.push(obj);
-		}
-
-		getAll() {
-			return this.array;
-		}
-	}
-	var lines = [];
-	var v = new Vector();
-	var H = 0;
-
-
 	document.getElementById("fileInput").addEventListener("change", function selectedFileChanged() {
 		if (this.files.length === 0) {
 			console.log("No file selected.");
@@ -62,20 +30,4 @@ $(document).ready(function () {
 		};
 		reader.readAsText(this.files[0]);
 	});
-
-	function getMax(x, y) {
-		if (x > y) {
-			return x;
-		}
-		return y;
-	}
-
-	function knapsnack(Size, Price, Weight, N) {
-		if (N == 0 || Size == 0) return 0;
-		if (Weight[N - 1] > Size)
-			return knapsnack(Size, Price, Weight, N - 1);
-		else
-			return getMax(Price[N - 1] + knapsnack(Size - Weight[N - 1], Price, Weight, N - 1), knapsnack(Size, Price, Weight, N - 1));
-	}
-
 });
