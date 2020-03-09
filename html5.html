@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Abonament Bibliotecă</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <table>
+        <tr>
+          <td colspan="4">
+            <h2><i>Abonament Bibliotecă</i></h2>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1">
+            Nume <input type="text" name="Client" size="20" value="" />
+          </td>
+          <td colspan="1">
+            Prenume <input type="text" name="Client" size="20" value="" />
+          </td>
+          <td colspan="1">
+            CNP <input type="text" name="CNP" maxlength="13" value="" />
+          </td>
+          <td colspan="1">
+            Sex <input type="radio" name="Sex" value="M" checked />M
+            <input type="radio" name="Sex" value="F" />F
+            <input type="radio" name="Sex" value="Alta varianta" />Alta varianta
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1">
+            Varsta <input type="text" name="Varsta" size="3" />
+          </td>
+          <td colspan="1">
+            Email <input type="text" name="Email" maxlength="40" />
+          </td>
+          <td colspan="1">
+            Email <input type="text" name="Email" maxlength="40" />
+          </td>
+          <td colspan="1">
+            Email <input type="text" name="Email" maxlength="40" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">Detalii abonament</td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <br />
+            <table>
+              <tr>
+                <td>Abonamente Disponibile</td>
+                <td>
+                  <ol type="I">
+                    <li>
+                      Studenți
+                      <ol>
+                        <li><span>Taxă</span></li>
+                        <li><span>Buget</span></li>
+                      </ol>
+                    </li>
+                    <li>
+                      Pensionari
+                    </li>
+                    <li>
+                      Bugetari
+                      <ul>
+                        <li>Stat</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Șomeri
+                    </li>
+                    <li>
+                      Elev
+                      <ul>
+                        <li>Liceu</li>
+                        <li>General</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">Detalii utilizator</td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <br />
+            <table>
+              <tr>
+                <td colspan="1">
+                  Locul de munca/Studii
+                  <input
+                    type="text"
+                    name="Locul de munca/Studii"
+                    size="20"
+                    value=""
+                  />
+                </td>
+                <td colspan="1">
+                  Secție
+                  <input type="text" name="Secție" size="20" value="" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1">
+                  Clasă/Grupă/An
+                  <input
+                    type="text"
+                    name="Clasă/Grupă/An"
+                    maxlength="13"
+                    value=""
+                  />
+                </td>
+                <td colspan="1">
+                  Tel. muncă:
+                  <input type="text" name="TelMuncă" maxlength="13" value="" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1">
+                  Domiciliu
+                  <input type="text" name="Domiciliu" maxlength="40" />
+                </td>
+                <td>
+                  Județ <input type="text" name="Județ" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1">
+                  Data nașterii
+                  <input type="text" name="Data nașterii" maxlength="40" />
+                </td>
+                <td>
+                  Localitate <input type="text" name="Localitate" />
+                </td>
+              </tr>
+            </table>
+
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <strong>ISTORIC ABONAMENTE</strong>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>Nr.</td>
+                <td>Data început</td>
+                <td>Tip abonament</td>
+                <td>Data sfârșit</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <input
+                    type="text"
+                    name="data-început1"
+                    size="30"
+                    value="20 Februarie 2020"
+                  />
+                </td>
+                <td>
+                  <select name="TipAbonament" size="1">
+                    <option value="0" selected>Student</option>
+                    <option value="1">Pensionar</option>
+                    <option value="2">Șomer</option>
+                    <option value="3">Bugetar</option>
+                    <option value="4">Elev</option>
+                    <option value="5">Muncitor</option>
+                    <option value="6">Alte categorii</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="data-sfârșit1"
+                    size="30"
+                    value="20 Martie 2020"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <input type="text" name="data-început2" size="30" />
+                </td>
+                <td>
+                  <select name="NumărAccesorii" size="1">
+                    <option value="0" selected>Student</option>
+                    <option value="1">Pensionar</option>
+                    <option value="2">Somer</option>
+                    <option value="3">Bugetar</option>
+                    <option value="4">Elev</option>
+                    <option value="5">Muncitor</option>
+                    <option value="6">Alte categorii</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="text" name="data-sfârșit2" size="30" />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <input type="text" name="data-început3" size="30" />
+                </td>
+                <td>
+                  <select name="TipAbonament" size="1">
+                    <option value="0" selected>Student</option>
+                    <option value="1">Pensionar</option>
+                    <option value="2">Somer</option>
+                    <option value="3">Bugetar</option>
+                    <option value="4">Elev</option>
+                    <option value="5">Muncitor</option>
+                    <option value="6">Alte categorii</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="text" name="data-sfârșit3" size="30" />
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <input type="text" name="data-început4" size="30" />
+                </td>
+                <td>
+                  <select name="TipAbonament" size="1">
+                    <option value="0" selected>Student</option>
+                    <option value="1">Pensionar</option>
+                    <option value="2">Somer</option>
+                    <option value="3">Bugetar</option>
+                    <option value="4">Elev</option>
+                    <option value="5">Muncitor</option>
+                    <option value="6">Alte categorii</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="text" name="data-sfârșit4" size="30" />
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <input type="text" name="data-început5" size="30" />
+                </td>
+                <td>
+                  <select name="TipAbonament" size="1">
+                    <option value="0" selected>Student</option>
+                    <option value="1">Pensionar</option>
+                    <option value="2">Somer</option>
+                    <option value="3">Bugetar</option>
+                    <option value="4">Elev</option>
+                    <option value="5">Muncitor</option>
+                    <option value="6">Alte categorii</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="text" name="data-sfârșit5" size="30" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <strong>ACTE NECESARE</strong>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  Copie buletin (PNG): <input type="file" name="addBuletin" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <strong>DETALII SUPLIMENTARE</strong>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <textarea rows="5" cols="100"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <input type="submit" value="Inregistrare" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div>
+      <p>
+        <a href="http://google.ro"
+          ><img
+            src="https://www.google.ro/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="test"
+            width="88"
+        /></a>
+      </p>
+    </div>
+  </body>
+</html>
