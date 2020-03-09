@@ -56,9 +56,9 @@ class Controller {
 		let x = this.random(n), f1 = this.fitnessVector(x, vector, n),
 			c = this.countVector(x, vector, n),
 			bestF = f1, bestX = x, minc = c,
-			maximAux = maxim,
-			vector_generated = [];
-		this.vector_generated.push(minc);
+			maximAux = maxim;
+		let v = this.vector_generated;
+		v.push([minc, bestF]);
 
 		for (var i = 0; i < k; i++) {
 			x = this.random(n);
@@ -74,11 +74,10 @@ class Controller {
 					bestF = f1;
 					maxim = maxim - f1;
 					minc = c;
-					this.vector_generated.push(c);
 				}
 			}
 			maxim = maximAux;
 		}
-		return this.vector_generated;
+		return v;
 	}
 }
